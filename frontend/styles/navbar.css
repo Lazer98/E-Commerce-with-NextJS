@@ -1,0 +1,13 @@
+/* navbar.css */
+
+.navbar {
+    display: none; /* Hide Navbar by default */
+  }
+  
+  @media screen and (min-width: 768px) {
+    .navbar {
+      display: flex; /* Show Navbar on screens larger than 768px */
+      /* Add any other styles you need for the Navbar on larger screens */
+    }
+  }
+  

@@ -1,0 +1,118 @@
+{
+    "intents": [
+
+
+
+        {
+            "tag": "0",
+            "question": [
+                "Welcome to our page ,how may I help you?"
+            ],
+            "responses": [
+                "contact$01",
+                "shipping$02",
+                "payment$03"
+            ]
+        },
+
+        {
+            "tag": "01",
+            "question": [
+                "Whatexactly would you like to know?"
+            ],
+            "responses": [
+                "Contact number$011",
+                "Contact email$012",
+                "Working hours$013"
+            ]
+        },
+        {
+            "tag": "011",
+            "question": [
+                "This is our contact number:"
+            ],
+            "responses": [
+                "+4978445521"
+            ]
+        },
+        {
+            "tag": "012",
+            "question": [
+                "This is our contact email:"
+            ],
+            "responses": [
+                "contactus@web.de"
+            ]
+        },
+        {
+            "tag": "013",
+            "question": [
+                "These are our working hours:"
+            ],
+            "responses": [
+                "Mo-Fr: 8:00 -18:00",
+                "Sa: 10:00-12:00"
+            ]
+        },
+
+        
+        {
+            "tag": "02",
+            "question": [
+                "What would you like to know about our shipping?"
+            ],
+            "responses": [
+                "Companies$021",
+                "Time$022",
+                "Policy$023"
+            ]
+        },
+        {
+            "tag": "021",
+            "question": [
+                "We are working with the following companies:"
+            ],
+            "responses": [
+                "DHL",
+                "UPS"
+            ]
+        },
+        {
+            "tag": "022",
+            "question": [
+                "The shipping time differs from each order"
+            ],
+            "responses": [
+                "Inside Europe between 2 weeks",
+                "Outside of Europe could take longer",
+                "Not shipping to: Australia,New Zealand ,Indonesia ,Papa Neuguinea"
+            ]
+        },
+        {
+            "tag": "023",
+            "question": [
+                "Our policy is as follows"
+            ],
+            "responses": [
+                "We don't take responsibility on the order the moment  ",
+                "sent by the company",
+                "All complaints are to the company"
+            ]
+        },
+
+
+
+        {
+            "tag": "03",
+            "question": [
+                "Right now you have the following payment options:"
+            ],
+            "responses": [
+                "Paypal",
+                "Bankial transfer",
+                "SHP"
+            ]
+        }
+        
+    ]
+}

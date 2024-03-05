@@ -1,0 +1,52 @@
+server:
+  port: 8086
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/user_registration
+    username: root1
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+
+  security:
+    oauth2:
+      client:
+        registration:
+          api-client-oidc:
+            provider: ${security.oauth2.client.registration.api-client.provider1}
+            client-id: ${security.oauth2.client.registration.api-client.client-id1}
+            client-secret: ${security.oauth2.client.registration.api-client.client-secret1}
+            authorization-grant-type: ${security.oauth2.client.registration.api-client.authorization-grant-type1}
+            redirect-uri: ${security.oauth2.client.registration.api-client.redirect-uri1}
+            scope: ${security.oauth2.client.registration.api-client.scope1}
+            client-name: ${security.oauth2.client.registration.api-client.client-name1}
+          api-client-authorization-code:
+            provider: ${security.oauth2.client.registration.api-client.provider1}
+            client-id: ${security.oauth2.client.registration.api-client.client-id1}
+            client-secret: ${security.oauth2.client.registration.api-client.client-secret1}
+            authorization-grant-type: ${security.oauth2.client.registration.api-client.authorization-grant-type1}
+            redirect-uri: ${security.oauth2.client.registration.api-client.redirect-uri1}
+            scope: ${security.oauth2.client.registration.api-client.scope1}
+            client-name: ${security.oauth2.client.registration.api-client.client-name1}
+      provider:
+        spring:
+          issuer-uri: ${security.oauth2.client.provider.spring.issuer-uri1}
+
+myapp:
+  secretKey: ${myapp.secret_key1}
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${mail.username1}
+    password: ${mail.password1}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
